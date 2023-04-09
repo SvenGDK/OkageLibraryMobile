@@ -9,6 +9,9 @@ A mobile version of OkageLibrary. </br>
 - PS2 Backup Manager
   - Shows game title and cover from [PSXDatacenter](https://psxdatacenter.com) if the game ID is supported
   
+## Files location
+- ISO and ELF files will be loaded from the DOWNLOAD folder on your phone (/storage/emulated/0/Download)
+  
 ## How-to send an ELF file
 - Note down your console IP
 - Open "Okage: Shadow King" and load the exploited save game with the "Network ELF Loader".
