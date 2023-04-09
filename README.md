@@ -1,5 +1,5 @@
 # OkageLibrary Mobile
-A mobile version of OkageLibrary. Ready soon for testing.
+A mobile version of OkageLibrary.
 
 ## Features of v1.0
 - Send ELFs to the mast1c0re Network ELF Loader
@@ -12,15 +12,15 @@ A mobile version of OkageLibrary. Ready soon for testing.
 - Note down your console IP
 - Open "Okage: Shadow King" and load the exploited save game with the "Network ELF Loader".
 - Wait until you see the message "Waiting for ELF file"
-- Open "OkageLibrary Mobile" on your phone and enter your console IP
-- Select the ELF from your "ELF Library" and select "Send selected ELF"
+- Open "OkageLibrary Mobile" on your phone and enter your console IP on the "Home" tab
+- Switch to the "ELF Library" and choose an ELF file from your "ELF Library" and select "Send selected ELF"
 
 ## How-to send a game
+- Enter your console IP on the "Home" tab
 - Send the "Network Game Loader" ELF to the console
 - Open the "PS2 Games Library"
 - Select the game on the list and select "Send selected game"
 - Wait until the game has been transferred to the console
 - OPTIONAL (requires latest Network Game Loader):
   - Select Yes/No on your console to send a config file
-  - If you have choosen "Yes" -> Click on "Send config" and select your .conf file
-- Enjoy (if not crashed... :P)
+  - If you have choosen "Yes" -> Click on "Send config" and select your .conf file on your phone
