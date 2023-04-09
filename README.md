@@ -1,12 +1,13 @@
 # OkageLibrary Mobile
-A mobile version of OkageLibrary.
+A mobile version of OkageLibrary. </br>
+(Currently only for Android)
 
 ## Features of v1.0
 - Send ELFs to the mast1c0re Network ELF Loader
 - Send PS2 games to the mast1c0re Network Game Loader
   - Supports sending config files "GAME-ID_cli.conf" after transferring a game (requires latest Network Game Loader)
 - PS2 Backup Manager
-  - Shows game details and art from [PSXDatacenter](https://psxdatacenter.com) if the game ID is supported
+  - Shows game title and cover from [PSXDatacenter](https://psxdatacenter.com) if the game ID is supported
   
 ## How-to send an ELF file
 - Note down your console IP
