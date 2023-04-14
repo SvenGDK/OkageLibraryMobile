@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OkageLibraryMobile.MainPage"
+             Title="Home"
+             BackgroundColor="Black">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="ava.png"
+                SemanticProperties.Description="OkageLibrary Mobile"
+                HeightRequest="84"
+                WidthRequest="84"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="OkageLibrary Mobile v1.1"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="24"
+                HorizontalOptions="Center" TextColor="#FFFFFF" />
+
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button
+                x:Name="LibraryButton"
+                Text="Games Library"
+                SemanticProperties.Hint="Open game library"
+                Clicked="OpenLibrary"
+                Margin="5"
+                HorizontalOptions="Center" />
+
+                <Button
+                x:Name="SenderButton"
+                Text="ELF Library"
+                SemanticProperties.Hint="Send a game to a PS4/5"
+                Clicked="OpenSender"
+                Margin="5"
+                HorizontalOptions="Center" />
+            </HorizontalStackLayout>
+
+            <VerticalStackLayout>
+                <Label Text="Please enter your console IP:"
+                       TextColor="#FFFFFF"/>
+
+                <Entry x:Name="IPTextBox"
+                       Placeholder="Enter console IP"
+                       ClearButtonVisibility="WhileEditing"
+                       BackgroundColor="#282828"
+                       TextColor="#FFFFFF"
+                       PlaceholderColor="#FFFFFF"
+                       Keyboard="Telephone"
+                       MaxLength="15"
+                       Completed="IPTextBox_Completed"/>
+            </VerticalStackLayout>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

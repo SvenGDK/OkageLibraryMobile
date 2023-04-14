@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OkageLibraryMobile.ELFLibrary"
+             Title="ELF Library"
+             BackgroundColor="Black">
+    
+    <StackLayout>
+
+        <ListView x:Name="ELFListView" Margin="20" SelectionMode="Single" ItemSelected="ELFListView_ItemSelected" >
+            <ListView.Header>
+                <Grid HorizontalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30*" />
+                        <ColumnDefinition Width="30*" />
+                        <ColumnDefinition Width="30*" />
+                        <ColumnDefinition Width="30*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0"
+                           Text="File Name"
+                           TextColor="#FFFFFF" />
+
+                    <Label Grid.Column="1"
+                           Text="Console"
+                           TextColor="#FFFFFF" />
+
+                    <Label Grid.Column="2"
+                           Text="Firmware"
+                           TextColor="#FFFFFF" />
+
+                    <Label Grid.Column="3"
+                           Text="Path"
+                           TextColor="#FFFFFF" />
+                </Grid>
+            </ListView.Header>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid HorizontalOptions="FillAndExpand">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30*" />
+                                <ColumnDefinition Width="30*" />
+                                <ColumnDefinition Width="30*" />
+                                <ColumnDefinition Width="30*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="0"
+                                   Text="{Binding FileName}"
+                                   TextColor="#FFFFFF" />
+
+                            <Label Grid.Column="1"
+                                   Text="{Binding Console}"
+                                   TextColor="#FFFFFF" />
+
+                            <Label Grid.Column="2"
+                                   Text="{Binding Firmware}"
+                                   TextColor="#FFFFFF" />
+
+                            <Label Grid.Column="3"
+                                   Text="{Binding FilePath}"
+                                   TextColor="#FFFFFF" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <VerticalStackLayout>
+            <Label x:Name="SendProgresLabel"
+                   TextColor="#FFFFFF"
+                   HorizontalOptions="CenterAndExpand"
+                   IsVisible="True"/>
+
+            <Label x:Name="Info1"
+                   TextColor="#FFFFFF"
+                   HorizontalOptions="CenterAndExpand"
+                   IsVisible="True"/>
+
+            <Label x:Name="Info2"
+                   TextColor="#FFFFFF"
+                   HorizontalOptions="CenterAndExpand"
+                   IsVisible="True"/>
+
+        </VerticalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button
+                x:Name="LoadELFFilesButton"
+                Text="Load ELFs"
+                SemanticProperties.Hint="Loads a folder containing ELFs"
+                Clicked="LoadELFFilesButton_Clicked"
+                Margin="5"
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button
+                x:Name="LoadSingleELFButton"
+                Text="Select an ELF"
+                SemanticProperties.Hint="Select an ELF from your phone"
+                Clicked="LoadSingleELFButton_Clicked"
+                Margin="5"
+                HorizontalOptions="CenterAndExpand" />
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button
+                x:Name="SendELFButton"
+                Text="Send selected ELF"
+                SemanticProperties.Hint="Sends the selected ELF"
+                Margin="5"
+                Clicked="SendELFButton_Clicked"
+                HorizontalOptions="CenterAndExpand"
+                IsEnabled="False"/>
+        </HorizontalStackLayout>
+
+    </StackLayout>
+</ContentPage>
