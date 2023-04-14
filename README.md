@@ -2,7 +2,7 @@
 A mobile version of OkageLibrary. </br>
 (Currently only for Android)
 
-## Features of v1.0
+## Features of v1.1
 - Send ELFs to the mast1c0re Network ELF Loader
 - Send PS2 games to the mast1c0re Network Game Loader
   - Supports sending config files "GAME-ID_cli.conf" after transferring a game (requires latest Network Game Loader)
@@ -11,11 +11,6 @@ A mobile version of OkageLibrary. </br>
   
 ## Files location
 - ISO and ELF files will be loaded from the DOWNLOAD folder on your phone (/storage/emulated/0/Download)
-
-## Required permission change
-The app will ask for the "Files and Media" permission but this isn't enough to load ISOs or ELS from the Downloads folder, you need to change the permission additionally like in this picture and give full permission:
-
-<img width="231" alt="Untitled" src="https://user-images.githubusercontent.com/84620/230912795-cd97ffd1-1d27-48f9-8f82-6f28e10fdfd9.png">
   
 ## How-to send an ELF file
 - Note down your console IP
