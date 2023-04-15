@@ -32,6 +32,6 @@ This is my very first mobile app, any suggestions and/or improvements are very w
 
 ## Strange sending behaviour
 Sending ELFs and ISOs are working, HOWEVER the usage of "System.Net.Sockets.Socket" seems to be bugged in .NET MAUI for Android.</br>
-Smaller files like the ELFs are sometimes transferred with more bytes and you end up with "Failed on listening on port 9045" & the controller changes it's color. -> RETRY</br>
+Smaller files like the ELFs are sometimes transferred with more bytes and you end up with "Failed to download ISO / Failed on listening on port 9045" & the controller changes it's color. -> Restart the exploit and send again</br>
 This problem could be device related as the Pixel 5 (emulator with A12 or A13) always succeeded while Samsung's newest A34 with Android 13 (device) only sometimes.</br>
 Any suggestions or tips are very welcome.
